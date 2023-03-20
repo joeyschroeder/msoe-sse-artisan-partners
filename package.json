@@ -1,0 +1,88 @@
+{
+  "name": "msoe-sse-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eslint:fix": "eslint --fix ./src/"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "animate.css": "^4.1.1",
+    "classnames": "^2.3.2",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "sass": "^1.59.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "react-app"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.js"
+        ],
+        "rules": {
+          "import/prefer-default-export": [
+            0
+          ],
+          "prettier/prettier": [
+            1,
+            {
+              "endOfLine": "auto",
+              "singleQuote": true
+            }
+          ],
+          "quotes": [
+            "error",
+            "single"
+          ],
+          "react/forbid-prop-types": [
+            2,
+            {
+              "forbid": [
+                "any"
+              ]
+            }
+          ],
+          "react/jsx-filename-extension": [
+            0
+          ],
+          "semi": [
+            "error",
+            "always"
+          ]
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
